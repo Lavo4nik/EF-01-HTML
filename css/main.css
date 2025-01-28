@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+/* Add font-family */
+@font-face {
+    font-family: 'Neue Regrade';
+    src: url('fonts/Neue-Regrade-Variable.ttf') format('truetype');
+    font-weight: 100 900; /* Поддержка переменных значений толщины */
+    font-style: normal; /* Или italic, если есть поддержка */
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('fonts/GeneralSans-Variable.woff2') format('woff2');
+    font-weight: 100 900; /* Диапазон толщины */
+    font-style: normal; /* Или italic */
+}
+
+/* Fonts Styles */
+font-title{
+    font-family: 'Neue Regrade', sans-serif;
+
+}
+font-main{
+    font-family: 'General Sans', sans-serif;
+
+}
+
+
+.main_logo{
+    
+    
+    font-weight: bold;
+    font-size: 8rem;
+}
+.nav_menu{
+    border: 1px solid #000;
+    width: 90vw;
+    height: 80vh;
+}
