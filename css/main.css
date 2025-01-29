@@ -1,45 +1,166 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 html {
-    font-size: 62.5%; /* 10px */
+    font-size: 62.5%;
+    /* 10px */
 }
 
 /* Add font-family */
 @font-face {
     font-family: 'Neue Regrade';
-    src: url('fonts/Neue-Regrade-Variable.ttf') format('truetype');
-    font-weight: 100 900; /* Поддержка переменных значений толщины */
-    font-style: normal; /* Или italic, если есть поддержка */
+    src: url('/fonts/Neue-Regrade-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    /* Поддержка переменных значений толщины */
+    font-style: normal;
+    /* Или italic, если есть поддержка */
 }
 
 @font-face {
     font-family: 'General Sans';
-    src: url('fonts/GeneralSans-Variable.woff2') format('woff2');
-    font-weight: 100 900; /* Диапазон толщины */
-    font-style: normal; /* Или italic */
+    src: url('/fonts/GeneralSans-Variable.woff2') format('woff2');
+    font-weight: 100 900;
+    /* Диапазон толщины */
+    font-style: normal;
+    /* Или italic */
 }
 
 /* Fonts Styles */
-font-title{
+/* FONT FAMILY */
+.font-title {
     font-family: 'Neue Regrade', sans-serif;
 
 }
-font-main{
+
+.font-main {
     font-family: 'General Sans', sans-serif;
+}
 
+/* FONT SIZE */
+.text_24 {
+    font-size: 2.4rem;
+}
+
+.text_16 {
+    font-size: 1.6rem;
+}
+
+/* FONT WEIGHT */
+.text_700 {
+    font-weight: 700;
+}
+
+.text_600 {
+    font-weight: 600;
+}
+
+.text_500 {
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+/* TAGS */
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 
-.main_logo{
-    
-    
-    font-weight: bold;
-    font-size: 8rem;
+/* HEADER */
+.main_header {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid#000;
+    display: flex;
+    max-width: 1400px;
+    min-width: 930px;
+    max-height: 80px;
+    margin: 20px;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+
 }
-.nav_menu{
+
+.main_logo {}
+
+.main_nav {
+    display: flex;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav_item {
+    margin-right: 48px;
+}
+
+.nav_link {}
+
+.auth_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+    min-width: 226px;
+}
+
+.btn_login {
+    border: 1px solid black;
+    padding: 12px 24px;
+    border-radius: 100px;
+}
+
+.btn_signup {
+    border: 1px solid black;
+    padding: 12px 24px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #3139FB;
+}
+
+/* MAIN CONTENT */
+.main_content {
+    
+    max-width: 1400px;
+    border: 1px solid #e60303d0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 97, 119);
+}
+
+.block_width {
+    flex: 1 1 auto;
+    /* min-width: 100%; */
+    max-width: 100%;
+    min-width: 600px;
+    margin: 0 auto;
+    min-height: 10vh;
     border: 1px solid #000;
-    width: 90vw;
-    height: 80vh;
+    background-color: #fff;
+}
+
+/* FIRST BLOCK */
+.main_block1 {
+    display: flex;
+
+    
+
+}
+.main_block2 {
+    display: flex;
+
+
 }
